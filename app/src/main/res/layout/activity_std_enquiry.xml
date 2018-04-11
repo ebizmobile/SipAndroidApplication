@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.eazibiz.sipandroidapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/_290sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/fMobileNoLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_44sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <EditText
+                        android:id="@+id/stdEnqMobileNo"
+                        android:layout_width="@dimen/_290sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_centerHorizontal="true"
+                        android:ems="10"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/_14sdp"
+                        android:hint="Mobile No"
+                        android:inputType="phone"
+                        android:layout_weight="0.38"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/_290sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/fNameLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_44sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <EditText
+                        android:id="@+id/stdEnqName"
+                        android:layout_width="@dimen/_290sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_centerHorizontal="true"
+                        android:ems="10"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/_14sdp"
+                        android:hint="Name"
+                        android:inputType="text"
+                        android:layout_weight="0.38"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_39sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_2sdp"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="@dimen/_290sdp"
+                android:layout_height="@dimen/_39sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Gender" />
+                <RadioGroup
+                    android:id="@+id/studentEnqradioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/textView1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton
+                        android:id="@+id/studentEnqMaleBt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:textColor="#7e7a7a"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/studentEnqFeMaleBt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/radioGroup1"
+                        android:layout_below="@+id/radioGroup1"
+                        android:textStyle="normal"
+                        android:textColor="#7e7a7a"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Female" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/_290sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/fStdEnqEmailAddressLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_44sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <EditText
+                        android:id="@+id/stdEnqEmailAddress"
+                        android:layout_width="@dimen/_290sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_centerHorizontal="true"
+                        android:ems="10"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/_14sdp"
+                        android:hint="E-mail"
+                        android:inputType="textEmailAddress"
+                        android:layout_weight="0.38"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/_290sdp"
+                android:layout_height="@dimen/_44sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/fStdEnqDateOfBirthLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_45sdp"
+                    android:paddingLeft="@dimen/_17sdp"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    >
+                <TextView
+                    android:id="@+id/stdEnqDateOfBirth"
+                    android:layout_width="@dimen/_290sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:ems="10"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/_14sdp"
+                    android:hint="D-O-B"
+                    android:gravity="center_vertical"
+                    android:inputType="date"
+                    android:layout_weight="0.38">
+
+                </TextView>
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="0.25"
+                        android:background="#a3a0a0" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_2sdp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/_290sdp"
+                android:layout_height="@dimen/_44sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/fStdEnqCourseLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_45sdp"
+                    android:paddingLeft="@dimen/_14sdp"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    >
+
+                <Spinner
+                    android:id="@+id/stdEnqCourse"
+                    android:layout_width="@dimen/_280sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:ems="10"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/_14sdp"
+                    android:hint=""
+                    android:inputType="text">
+                </Spinner>
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="0.25"
+                        android:background="#a3a0a0" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_2sdp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/_290sdp"
+                android:layout_height="@dimen/_44sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/sourceOfEnqLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_45sdp"
+                    android:paddingLeft="@dimen/_14sdp"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    >
+
+                    <Spinner
+                        android:id="@+id/stdSourceOfEnq"
+                        android:layout_width="@dimen/_280sdp"
+                        android:layout_height="@dimen/_36sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:ems="10"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/_14sdp"
+                        android:hint=""
+                        android:inputType="text">
+                    </Spinner>
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="0.25"
+                        android:background="#a3a0a0" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_1sdp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/_290sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_44sdp"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <EditText
+                        android:id="@+id/stdEnqDate"
+                        android:layout_width="@dimen/_290sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_centerHorizontal="true"
+                        android:ems="10"
+                        android:textStyle="normal"
+                        android:focusableInTouchMode="false"
+                        android:textSize="@dimen/_14sdp"
+                        android:hint="Enquiry Dt"
+                        android:inputType="text"
+                        android:layout_weight="0.38">
+                    </EditText>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/stdEnqBackBt"
+                    android:text="Back"
+
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="#e7a727"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/stdEnqSaveBt"
+                    android:text="Save"
+                    android:textColor="#ffffff"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:textStyle="bold"
+
+                    android:textSize="@dimen/_18sdp"
+
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="#e7a727"
+                    android:layout_marginTop="10dp"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

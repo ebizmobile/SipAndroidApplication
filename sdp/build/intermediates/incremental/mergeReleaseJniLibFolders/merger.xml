@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\sip_android\SIPAndroidApplication_working_1_commit - Copy\sdp\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="E:\sip_android\SIPAndroidApplication_working_1_commit - Copy\sdp\build-types\release\jniLibs"/></dataSet></merger>

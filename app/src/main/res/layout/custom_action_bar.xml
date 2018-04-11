@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    >
+
+    <FrameLayout
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="?android:colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/enq_list_search"
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:src="@drawable/search_bar"
+            android:layout_gravity="right"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:onClick="animate"
+            />
+
+        <EditText
+            android:id="@+id/enqListSearchText"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="40dp"
+            android:imeOptions="actionDone"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/_70sdp"
+            android:textSize="@dimen/_14sdp"
+            android:hint="Search Name/Mobile No"
+            android:background="@drawable/background_edt"
+            android:backgroundTint="#ffffff"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/enq_list_back"
+            android:layout_width="45dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:src="@drawable/ic_action_name"
+            android:onClick="backtohome"
+            />
+
+    </FrameLayout>
+</LinearLayout>

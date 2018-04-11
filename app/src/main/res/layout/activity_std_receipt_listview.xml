@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_layout_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <!-- Bottom View Start-->
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#fae18920"
+            >
+
+
+            <TextView
+                android:id="@+id/payBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAY"
+                android:background="#fae18920"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_15sdp"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <!-- Bottom View End-->
+
+    <!-- Surface View Start -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="@dimen/_54sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/inv_dt_name"
+                    android:layout_width="@dimen/_54sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:text="Name"
+                    android:textStyle="normal"
+                    android:gravity="left"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_10sdp"
+                    />
+                <TextView
+                    android:id="@+id/std_inv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_10sdp" />
+                <TextView
+                    android:id="@+id/std_inv_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_10sdp" />
+                <TextView
+                    android:id="@+id/std_inv_mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_10sdp" />
+                <TextView
+                    android:id="@+id/std_inv_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_10sdp" />
+                <TextView
+                    android:id="@+id/std_inv_due_dt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/inv_monyear_name"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:text="Name"
+                    android:textStyle="normal"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_10sdp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/inv_amt_name"
+                    android:layout_width="@dimen/_53sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:text="Name"
+                    android:textStyle="normal"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_10sdp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/paid_amt_name"
+                    android:layout_width="@dimen/_53sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:text="Name"
+                    android:textStyle="normal"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_10sdp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/bal_amt_name"
+                    android:layout_width="@dimen/_53sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:text="Name"
+                    android:textStyle="normal"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_10sdp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <!-- Surface View End -->
+</com.daimajia.swipe.SwipeLayout>

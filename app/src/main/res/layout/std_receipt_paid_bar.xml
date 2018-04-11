@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="?android:colorPrimary"
+        >
+
+        <TextView
+            android:id="@+id/std_recpt_bar_save_bt"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_215sdp"
+            android:text="Save"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_13sdp"
+            />
+
+        <TextView
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:text="Receipt"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:gravity="left"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_16sdp"
+            />
+
+        <ImageView
+            android:id="@+id/std_recpt_bar_back_bt"
+            android:layout_width="28dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:src="@drawable/ic_action_name"
+            android:onClick="backtoStdRecpList"
+            />
+
+    </FrameLayout>
+</LinearLayout>

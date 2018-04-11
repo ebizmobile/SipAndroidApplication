@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <!-- Bottom View Start-->
+    <LinearLayout
+        android:id="@+id/bottom_wrapper_2"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/border_red"
+            >
+
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:background="#fae18920"
+                android:padding="@dimen/_3sdp"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_18sdp"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <!-- Bottom View End-->
+
+    <!-- Surface View Start -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:orientation="horizontal" >
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/std_enq_list_name"
+                        android:layout_width="131dp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:text="Name"
+                        android:textStyle="normal"
+                        android:gravity="left"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_13sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/enq_primary_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_10sdp" />
+                    <TextView
+                        android:id="@+id/local_primary_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/std_enq_list_course"
+                        android:layout_width="130dp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:text="Course"
+                        android:textStyle="normal"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_13sdp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/std_enq_list_mobile_no"
+                        android:layout_width="133dp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:text="Mobile"
+                        android:textStyle="normal"
+                        android:gravity="left"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_13sdp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/std_enq_list_enq_dt"
+                        android:layout_width="130dp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:text="Date"
+                        android:textStyle="normal"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_13sdp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_1sdp"
+            tools:ignore="UselessParent">
+            <ImageView
+                android:id="@+id/stdEnqCallBtId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/callericon"
+                android:layout_alignParentRight="true"
+                 />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <!-- Surface View End -->
+</com.daimajia.swipe.SwipeLayout>

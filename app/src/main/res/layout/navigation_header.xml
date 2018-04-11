@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/mtf_image"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/menu_logo"
+            android:adjustViewBounds="true"
+            android:layout_weight="21" />
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginBottom="75dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/_19sdp"
+            android:visibility="gone"
+            android:text="SIP Academy"
+            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</FrameLayout>

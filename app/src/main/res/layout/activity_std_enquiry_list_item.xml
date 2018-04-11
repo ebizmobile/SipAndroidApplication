@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:layout_width="@dimen/_210sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="@dimen/_210sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/std_enq_list_name"
+                    android:layout_width="131dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:text="Name"
+                    android:textStyle="normal"
+                    android:gravity="left"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_13sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/enq_primary_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_105sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/std_enq_list_course"
+                    android:layout_width="115dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:text="Course"
+                    android:textStyle="normal"
+                    android:gravity="right"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_13sdp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_210sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/std_enq_list_mobile_no"
+                    android:layout_width="133dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:text="Mobile No"
+                    android:textStyle="normal"
+                    android:gravity="left"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_13sdp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_105sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/std_enq_list_enq_dt"
+                    android:layout_width="115dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:text="Enq Date"
+                    android:textStyle="normal"
+                    android:gravity="right"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_13sdp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_1sdp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <ImageView
+            android:id="@+id/stdEnqCallBtId"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/callericon"
+            android:adjustViewBounds="true"
+            android:layout_weight="21" />
+    </LinearLayout>
+
+</LinearLayout>
